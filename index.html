@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.2.0.min.css" />
+        <title>OpenGate</title>
+    </head>
+    <body>
+        <div data-role="page" id="OpenGateMainPage">
+          <div data-role="header">
+            <h1>Open Gate</h1>
+          </div> 
+          <div data-role="content">
+            <a id="OpenGateButton" data-role="button">Open Gate Now!</a>
+          </div>
+          <div class="ui-grid-b">
+            <div class="ui-block-a"></div>
+            <div class="ui-block-b">
+              <h1>Fortech Hackaton 2013</h1>
+            </div>
+            <div class="ui-block-c"></div>
+            <div class="ui-block-a"></div>
+            <div class="ui-block-b">
+              <img src="img/fortech.png" />
+            </div>
+            <div class="ui-block-c"></div>
+            </div>          
+          <div data-role="footer" data-position="fixed">
+          <div class="ui-grid-b">
+            <div class="ui-block-a">&nbsp</div>
+            <div class="ui-block-b">
+              <h4>Fortech (c)2013</h4>
+            </div>
+            <div class="ui-block-c">            
+              <a id="ConfigButton" href="#ConfigDialog" data-role="button" data-rel="dialog" data-transition="pop" data-icon="gear">Config</a>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- Start of third page: #popup -->
+<div data-role="page" id="ConfigDialog">
+
+	<div data-role="header" >
+		<h1>App Config</h1>
+	</div>
+	<div data-role="content" >	
+    <div data-role="fieldcontain">
+    <label for="OpenGateUrl">Gate Ip:</label>
+    <input type="text" name="name" id="OpenGateUrl" value=""  />
+    </div>
+
+    <div data-role="fieldcontain">
+    <label for="OpenGateUser">User</label>
+    <input type="text" name="name" id="OpenGateUser" value=""  />
+    </div>
+ 
+    <div data-role="fieldcontain">
+    <label for="OpenGateSecret">Secret</label>
+    <input type="text" name="name" id="OpenGateSecret" value=""  /> 
+    </div>
+    
+    <a id="OpenGateSaveConfig" href="#OpenGateMainPage" data-rel="back" data-role="button" data-inline="true" data-icon="back">Save</a>
+    <a href="#OpenGateMainPage" data-rel="back" data-role="button" data-inline="true" data-icon="delete">Cancel</a>
+    </p>	
+	</div>
+	<div data-role="footer">
+	</div>
+</div>
+        <script type="text/javascript" src="cordova-2.5.0.js"></script>
+        <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>    
+        <script type="text/javascript" src="js/opengateapp.js"></script>            
+    </body>
+</html>
